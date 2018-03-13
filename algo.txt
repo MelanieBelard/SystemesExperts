@@ -1,0 +1,91 @@
+!!!! PENSER AUX ERREURS DE L'UTILISATEUR (genre 2 côtés parallèles et 3 angles droits : ah bah c'est un rectangle en fait)
+
+
+// VARIABLES
+ordre
+anglesDroits
+cotesMemeLong
+cotesPara
+libelle
+erreur = "Impossible de traiter la demande"
+exists = false
+
+
+if ordre == 3 and cotesPara == 0: // c'est un triangle
+	exists = true
+	if anglesDroits == 0:
+		if cotesMemeLong == 0:
+			libelle = "Triangle quelconque"
+		else if cotesMêmeLong == 2:
+			libelle = "Triangle isocèle"
+		else if cotesMemeLong == 3:
+			libelle = "Triangle équilatéral"
+		else:
+			return erreur
+	else if anglesDroits == 1:
+		if cotesMemeLong == 2:
+			libelle = "Triangle rectangle isocèle"
+		else:
+			libelle = "Triangle rectangle"
+		
+	else:
+		return erreur // Un triangle ne peut avoir qu'un angle droit
+
+else if ordre == 4: //quadrilatère
+	exists = true
+	if anglesDroits == 0:
+		if cotesMemeLong == 0:
+			if cotesPara == 0:
+				libelle = "Quadrilatère quelconque"
+			else if cotesPara == 2:
+				libelle = "Trapèze"
+			else:
+				return erreur
+		else if cotesMemeLong == 2:
+			if cotesPara == 0:
+				libelle = "Quadrilatère quelconque"
+			else:
+				return erreur
+		else if cotesMemeLong == 4:
+			if cotesPara == 4:
+				libelle = "Losange"
+			else:
+				return erreur
+		else:
+			return erreur
+	else if anglesDroits == 1:
+		if cotesMemeLong == 0:
+			if cotesPara == 0:
+				libelle = "Quadrilatère quelconque"
+			else if cotesPara == 2:
+				libelle = "Trapèze"
+			else:
+				return erreur
+		else if cotesMemeLong == 2:
+			if cotesPara == 0:
+				libelle = "Quadrilatère quelconque"
+			else if cotesPara == 4:
+				libelle = "Rectangle"
+			else:
+				return erreur
+		else if cotesMemeLong == 4:
+			if cotesPara == 4:
+				libelle = "Carré"
+			else:
+				return erreur
+		else:
+			return erreur
+	else if anglesDroits == 2:
+		...
+	else if anglesDroits == 3 or anglesDroits == 4:
+		...
+	else:
+		return erreur
+else if ordre == 5:
+	exists = true
+	libelle = "Pentagone"		
+				
+	
+else:
+	return erreur
+	

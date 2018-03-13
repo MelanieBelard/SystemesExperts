@@ -91,10 +91,10 @@
 					<div class="col-12 col-md-6 col-lg-3 text-center">
 						<div class="row align-items-center">
 							<div class="col-12">
-								<label>Côtés de même taille :</label>
+								<label>Côtés parallèles :</label>
 							</div>
 							<div class="col-12">
-								<input type="number" name="cotes">
+								<input type="number" name="paralleles">
 							</div>
 						</div>
 					</div>
