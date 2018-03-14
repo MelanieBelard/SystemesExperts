@@ -1,4 +1,4 @@
-!!!! PENSER AUX ERREURS DE L'UTILISATEUR (genre 2 côtés parallèles et 3 angles droits : ah bah c'est un rectangle en fait)
+!!!! PENSER AUX ERREURS DE L'UTILISATEUR (genre 2 cÃ´tÃ©s parallÃ¨les et 3 angles droits : ah bah c'est un rectangle en fait)
 
 
 // VARIABLES
@@ -16,34 +16,34 @@ if ordre == 3 and cotesPara == 0: // c'est un triangle
 	if anglesDroits == 0:
 		if cotesMemeLong == 0:
 			libelle = "Triangle quelconque"
-		else if cotesMêmeLong == 2:
-			libelle = "Triangle isocèle"
+		else if cotesMÃªmeLong == 2:
+			libelle = "Triangle isocÃ¨le"
 		else if cotesMemeLong == 3:
-			libelle = "Triangle équilatéral"
+			libelle = "Triangle Ã©quilatÃ©ral"
 		else:
 			return erreur
 	else if anglesDroits == 1:
 		if cotesMemeLong == 2:
-			libelle = "Triangle rectangle isocèle"
+			libelle = "Triangle rectangle isocÃ¨le"
 		else:
 			libelle = "Triangle rectangle"
 		
 	else:
 		return erreur // Un triangle ne peut avoir qu'un angle droit
 
-else if ordre == 4: //quadrilatère
+else if ordre == 4: //quadrilatÃ¨re
 	exists = true
 	if anglesDroits == 0:
 		if cotesMemeLong == 0:
 			if cotesPara == 0:
-				libelle = "Quadrilatère quelconque"
+				libelle = "QuadrilatÃ¨re quelconque"
 			else if cotesPara == 2:
-				libelle = "Trapèze"
+				libelle = "TrapÃ¨ze"
 			else:
 				return erreur
 		else if cotesMemeLong == 2:
 			if cotesPara == 0:
-				libelle = "Quadrilatère quelconque"
+				libelle = "QuadrilatÃ¨re quelconque"
 			else:
 				return erreur
 		else if cotesMemeLong == 4:
@@ -56,27 +56,31 @@ else if ordre == 4: //quadrilatère
 	else if anglesDroits == 1:
 		if cotesMemeLong == 0:
 			if cotesPara == 0:
-				libelle = "Quadrilatère quelconque"
+				libelle = "QuadrilatÃ¨re quelconque"
 			else if cotesPara == 2:
-				libelle = "Trapèze"
+				libelle = "TrapÃ¨ze"
 			else:
 				return erreur
 		else if cotesMemeLong == 2:
 			if cotesPara == 0:
-				libelle = "Quadrilatère quelconque"
+				libelle = "QuadrilatÃ¨re quelconque"
 			else if cotesPara == 4:
 				libelle = "Rectangle"
 			else:
 				return erreur
 		else if cotesMemeLong == 4:
 			if cotesPara == 4:
-				libelle = "Carré"
+				libelle = "CarrÃ©"
 			else:
 				return erreur
 		else:
 			return erreur
 	else if anglesDroits == 2:
-		...
+		if cotesMemeLong == 2
+			if cotesPara == 2
+				libelle = "QuadrilatÃ¨re quelconque"
+			else if cotesPara == 4
+				libelle = 
 	else if anglesDroits == 3 or anglesDroits == 4:
 		...
 	else:
