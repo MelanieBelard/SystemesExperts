@@ -27,7 +27,7 @@ if ordre == 3 and cotesPara == 0: // c'est un triangle
 			libelle = "Triangle rectangle isocèle"
 		else:
 			libelle = "Triangle rectangle"
-		
+
 	else:
 		return erreur // Un triangle ne peut avoir qu'un angle droit
 
@@ -80,16 +80,31 @@ else if ordre == 4: //quadrilatère
 			if cotesPara == 2
 				libelle = "Quadrilatère quelconque"
 			else if cotesPara == 4
-				libelle = 
+				libelle = "Rectangle"
+			else:
+				return erreur
+		else if cotesMemeLong == 3 or cotesMemeLong == 4
+			libelle = "Carre"
+		else:
+			return erreur
 	else if anglesDroits == 3 or anglesDroits == 4:
-		...
+		if cotesMemeLong == 2
+			libelle = "Rectangle"
+		else if cotesMemeLong == 4
+			libelle = "Carre"
+		else:
+			return erreur
 	else:
 		return erreur
+
 else if ordre == 5:
 	exists = true
-	libelle = "Pentagone"		
-				
-	
+		if cotesMemeLong == 0 or cotesMemeLong == 1 orcotesMemeLong == 2 or cotesMemeLong == 3 or cotesMemeLong == 4
+			libelle = "Pentagone quelconque"
+		else if cotesMemeLong == 5
+			libelle = "Pentagone régulier"
+		else:
+			return erreur
+
 else:
 	return erreur
-	
