@@ -1,4 +1,4 @@
-<form class="row align-items-center" method="get" action="index.php">
+<form class="row align-items-center" method="post" action="index.php">
     <div class="col-12">
         <div class="row align-items-center bloc">
             <div class="col-12 col-md-6 col-lg-3 text-center">
@@ -31,7 +31,7 @@
                         <label>Côtés de même taille :</label>
                     </div>
                     <div class="col-12">
-                        <input type="number" name="cotes">
+                        <input type="number" name="cotes-egaux">
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                         <label>Côtés parallèles :</label>
                     </div>
                     <div class="col-12">
-                        <input type="number" name="paralleles">
+                        <input type="number" name="cotes-paralleles">
                     </div>
                 </div>
             </div>
