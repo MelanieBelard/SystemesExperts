@@ -1,4 +1,6 @@
-<?php 
-if (empty("0")) {
- 	echo "TAMER";
- } ?>
+
+
+ <?php 
+    $grr = "0";
+    echo $grr;
+  ?>
