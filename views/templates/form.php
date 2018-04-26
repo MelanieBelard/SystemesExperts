@@ -1,4 +1,5 @@
-<form class="row align-items-center" method="post" action="index.php">
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <form class="row align-items-center" method="post" action="index.php">
     <div class="col-12">
         <div class="row align-items-center bloc">
             <div class="col-12 col-md-6 col-lg-3 text-center">
@@ -7,7 +8,8 @@
                         <label>Nombre de côtés :</label>
                     </div>
                     <div class="col-12">
-                        <select name="ordre">
+                        <select name="ordre" id="ordre" onchange="selectOrdre(this.value)">
+                            <option value=" "> </option>
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
@@ -21,7 +23,8 @@
                         <label>Angles droits :</label>
                     </div>
                     <div class="col-12">
-                        <input type="number" name="angles-droits">
+                        <select id="angles-droits" name="angles-droits">
+                        </select>
                     </div>
                 </div>
             </div>
@@ -31,7 +34,8 @@
                         <label>Côtés de même taille :</label>
                     </div>
                     <div class="col-12">
-                        <input type="number" name="cotes-egaux">
+                        <select type="number" name="cotes-egaux" id="cotes-egaux">
+                        </select>
                     </div>
                 </div>
             </div>

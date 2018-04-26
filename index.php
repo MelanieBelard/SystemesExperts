@@ -20,7 +20,7 @@
         foreach ([$ordre, $anglesDroits, $cotesEgaux, $cotesPara] as $key) {
             if ($key['value'] == null) {
                 $key['value'] = "0";
-                var_dump($key);
+                // var_dump:($key);
             }
             $csvLine .= $key['value'].';';
         }
