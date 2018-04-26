@@ -14,32 +14,41 @@
         var optio = document.createElement("option");
         if (ordre==3) {
             var optio1 = document.createElement("option");
+            var optio2 = document.createElement("option");
             var optio0 = document.createElement("option");
+            optio2.text = "0";
             optio0.text = "2";
             optio1.text = "3";
+            coteegaux.add(optio2);
             coteegaux.add(optio0);
             coteegaux.add(optio1);
         };
         if (ordre==4) {
             var optio = document.createElement("option");
+            var optio2 = document.createElement("option");
             var optio3 = document.createElement("option");
             var optio4 = document.createElement("option");
+            optio2.text = "0";
             optio.text = "2";
             optio3.text = "3";
             optio4.text = "4";
+            coteegaux.add(optio2);
             coteegaux.add(optio);
             coteegaux.add(optio3);
             coteegaux.add(optio4);
         };
         if (ordre==5) {
             var optio = document.createElement("option");
+            var optio2 = document.createElement("option");
             var optio3 = document.createElement("option");
             var optio4 = document.createElement("option");
             var optio5 = document.createElement("option");
+            optio2.text = "0";
             optio.text = "2";
             optio3.text = "3";
             optio4.text = "4";
             optio5.text = "5";
+            coteegaux.add(optio2);
             coteegaux.add(optio);
             coteegaux.add(optio3);
             coteegaux.add(optio4);
