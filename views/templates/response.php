@@ -1,7 +1,7 @@
 <div class="row align-items-center bloc">
     <?php
         if (isset($response)) {
-            echo $csvLine;
+            echo $response;
         } else {
             echo "ERROR";
         }
