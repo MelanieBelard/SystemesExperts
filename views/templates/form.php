@@ -1,8 +1,7 @@
-<<<<<<< HEAD
     <script type="text/javascript" src="assets/js/script.js"></script>
     <form class="row align-items-center" method="post" action="index.php">
     <div class="col-12">
-        <div class="row align-items-center bloc">
+        <div class="row align-items-center form bloc">
             <div class="col-12 col-md-6 col-lg-3 text-center">
                 <div class="row align-items-center">
                     <div class="col-12">
@@ -32,7 +31,7 @@
             <div class="col-12 col-md-6 col-lg-3 text-center">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <label>Côtés de même taille :</label>
+                        <label>Côtés égaux :</label>
                     </div>
                     <div class="col-12">
                         <select type="number" name="cotes-egaux" id="cotes-egaux">

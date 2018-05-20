@@ -99,12 +99,12 @@ else if ordre == 4: //quadrilatère
 
 else if ordre == 5:
 	exists = true
-		if cotesMemeLong == 0 or cotesMemeLong == 1 orcotesMemeLong == 2 or cotesMemeLong == 3 or cotesMemeLong == 4
-			libelle = "Pentagone quelconque"
-		else if cotesMemeLong == 5
-			libelle = "Pentagone régulier"
-		else:
-			return erreur
+	if cotesMemeLong == 0 or cotesMemeLong == 1 or cotesMemeLong == 2 or cotesMemeLong == 3 or cotesMemeLong == 4
+		libelle = "Pentagone quelconque"
+	else if cotesMemeLong == 5
+		libelle = "Pentagone régulier"
+	else:
+		return erreur
 
 else:
 	return erreur
