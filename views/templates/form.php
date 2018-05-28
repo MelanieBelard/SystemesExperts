@@ -1,5 +1,5 @@
     <script type="text/javascript" src="assets/js/script.js"></script>
-    <form class="row align-items-center" method="post" action="index.php">
+    <form class="row align-items-center" method="post" action="">
     <div class="col-12">
         <div class="row align-items-center form bloc">
             <div class="col-12 col-md-6 col-lg-3 text-center">
