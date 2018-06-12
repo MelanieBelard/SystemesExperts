@@ -90,4 +90,24 @@
             angle.add(option3);
             angle.add(option4);
         };
+
+        var angle = document.getElementById("cotes-paralleles");
+        angle.remove(2);
+        angle.remove(1);
+        angle.remove(0);
+        var option = document.createElement("option");
+        if (ordre==3) {
+            var option = document.createElement("option");
+            option.text = "0";
+            angle.add(option);
+        };
+        if (ordre==4 || ordre==5) {
+            var option = document.createElement("option");
+            var option4 = document.createElement("option");
+            option.text = "2";
+            option4.text = "4";
+            angle.add(option);
+            angle.add(option4);
+        };
+
         }

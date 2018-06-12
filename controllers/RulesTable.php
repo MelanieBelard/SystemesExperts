@@ -2,7 +2,7 @@
 
 class RulesTable {
 
-    public function verifyFigure($ordre, $anglesDroits, $cotesEgaux, $cotesPara) {
+    public static function verifyFigure($ordre, $anglesDroits, $cotesEgaux, $cotesPara) {
         if ($ordre == 3) {
             if ($cotesPara != 0) {
                 return false;

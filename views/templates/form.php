@@ -45,7 +45,8 @@
                         <label>Côtés parallèles :</label>
                     </div>
                     <div class="col-12">
-                        <input type="number" name="cotes-paralleles">
+                        <select type="number" name="cotes-paralleles" id="cotes-paralleles">
+                            </select>
                     </div>
                 </div>
             </div>
