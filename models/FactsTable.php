@@ -2,7 +2,7 @@
 
 class FactsTable {
 
-    public static function isInCsv($csvTab, $csvLine) { // refaire grâce au tableau ci dessous
+    public static function isInCsv($csvTab, $csvLine) {
         $n = 0;
         foreach ($csvTab as $line) {
             if (strpos($line, $csvLine)) {

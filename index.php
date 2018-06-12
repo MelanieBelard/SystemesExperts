@@ -24,10 +24,7 @@
         }
 
         $csvContent = FactsTable::getCsvLines($csvPath);
-        // var_dump($csvContent);
         $isInCsv = FactsTable::isInCsv($csvContent, $csvLine);
-        // var_dump($isInCsv);die;
-
 
         if ($isInCsv !== false) {
             $response .= "<br>Résultat trouvé en base :<br>";
